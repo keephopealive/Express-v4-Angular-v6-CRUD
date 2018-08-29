@@ -1,0 +1,10 @@
+<h1>Edit Pet</h1>
+<form (submit)="updatePet()">
+  <input type="text" name="name" [(ngModel)]="editablePet.name" >
+  <input type="text" name="type" [(ngModel)]="editablePet.type" >
+  <input type="text" name="description" [(ngModel)]="editablePet.description" >
+  <input type="text" name="skill1" [(ngModel)]="editablePet.skill1" >
+  <input type="text" name="skill2" [(ngModel)]="editablePet.skill2" >
+  <input type="text" name="skill3" [(ngModel)]="editablePet.skill3" >
+  <input type="submit" value="Update">
+</form>

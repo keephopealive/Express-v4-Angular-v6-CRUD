@@ -1,0 +1,14 @@
+<h1>Pet List</h1>
+<p *ngFor="let pet of pets">
+  {{ pet.name }}
+  {{ pet.description }}
+  {{ pet.type }}
+  {{ pet.skill1 }}
+  {{ pet.skill2 }}
+  {{ pet.skill3 }}
+  <button [routerLink]="['/pets', pet._id ]" >Details</button>
+  <button [routerLink]="['/pets', pet._id, 'edit']">Edit</button>
+  <button (click)="deletePet(pet._id)">Delete</button>
+</p>
+
+<a [routerLink]="['/pets', 'new']">New Pet</a>

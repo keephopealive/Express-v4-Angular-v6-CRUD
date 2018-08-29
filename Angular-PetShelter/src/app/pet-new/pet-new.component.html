@@ -1,0 +1,10 @@
+<form (submit)="createPet()">
+  <input type="text" name="name" [(ngModel)]="newPet.name" id="">
+  <input type="text" name="type" [(ngModel)]="newPet.type" id="">
+  {{descriptionError.message}}
+  <input type="text" name="description" [(ngModel)]="newPet.description" id="">
+  <input type="text" name="skill1" [(ngModel)]="newPet.skill1" id="">
+  <input type="text" name="skill2" [(ngModel)]="newPet.skill2" id="">
+  <input type="text" name="skill3" [(ngModel)]="newPet.skill3" id="">
+  <input type="submit" value="Create">
+</form>
